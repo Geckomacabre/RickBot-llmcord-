@@ -72,7 +72,7 @@ async def on_message(new_msg):
 
     is_dm = new_msg.channel.type == discord.ChannelType.private
 
-    if (not is_dm and discord_client.user not in new_msg.mentions) or new_msg.author.bot:
+    if new_msg.author.bot:
         return
 
     role_ids = tuple(role.id for role in getattr(new_msg.author, "roles", ()))
