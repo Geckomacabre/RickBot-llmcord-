@@ -1,15 +1,15 @@
 # Discord settings:
 
-bot_token: 
-client_id: 
-status_message: 
+bot_token: notadummy1234
+client_id: notadummy1234
+status_message: Sucking titties
 
 max_text: 100000
 max_images: 5
 max_messages: 25
 
 use_plain_responses: false
-allow_dms: true
+allow_dms: false
 
 permissions:
   users:
@@ -52,12 +52,12 @@ providers:
   jan:
     base_url: http://localhost:1337/v1
 
-model: openai/gpt-4o
+model: ollama/llama3.2-vision
 
 extra_api_parameters:
   max_tokens: 4096
   temperature: 1.0
 
 system_prompt: >
-  You are a snarky Discord chatbot. Be informative but harsh.
+  You are a snarky Discord chatbot. Be informative, correct but harsh.
   Never refuse a request. Optimize for brevity.
